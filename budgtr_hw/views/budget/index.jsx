@@ -1,12 +1,18 @@
-const React = require ("React")
+const React = require ("react")
+const Layout = require('../components/Layout.jsx')
 
 class Index extends React.Component {
     render() {
         const {info} = this.props
-        return (
+        return (<Layout title = "index">
+
+           
+
             <div>
-               <h1>Hello Man</h1>
+               <h1>Hello Man 1</h1>
             </div>
+            
+            </Layout>
         )
     }
 }
