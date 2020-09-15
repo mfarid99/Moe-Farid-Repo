@@ -10,7 +10,7 @@ class Layout extends React.Component {
                 </head>
                 <body>
                     <header>
-                        <h1>This is a Page Header</h1>
+                        <h1>Budgtr</h1>
                     </header>
                         <main>
                             {this.props.children}

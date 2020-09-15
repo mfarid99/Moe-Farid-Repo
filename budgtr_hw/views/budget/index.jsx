@@ -2,19 +2,29 @@ const React = require ("react")
 const Layout = require('../components/Layout.jsx')
 
 class Index extends React.Component {
-    render() {
+    render(){
         const {info} = this.props
-        return (<Layout title = "index">
+        return (<Layout title="index">
+          
+            <table>
+                
+            {info.map((budget, index) => {
+                return <tr>  
+                    <th>{budget.date} </th> <th>{budget.name}</th>
+                    <th>{budget.from}</th>
+                    <th>{budget.amount}</th>
+                    
+                    
+                    </tr> 
+
+                
+
+            })}
 
            
-
-            <div>
-               <h1>Hello Man 1</h1>
-            </div>
             
-            </Layout>
-        )
+            </table>
+        </Layout>)
     }
 }
-
 module.exports = Index
