@@ -9,13 +9,19 @@ class Index extends React.Component {
             <table>
                 
             {info.map((budget, index) => {
-                return <tr>  
-                    <th>{budget.date} </th> <th>{budget.name}</th>
-                    <th>{budget.from}</th>
-                    <th>{budget.amount}</th>
+
+                return <tr style = {{textAlign: "left"}}>  
+
+                    <th>{budget.date} </th> 
+
+                    <th style = {{textIndent: 25}}> <a href = {budget.name}>{budget.name}</a> </th> 
+
+                    <th style = {{textIndent: 25}}>{budget.from}</th>
+
+                    <th style = {{textIndent: 25}}>{budget.amount}</th>
                     
                     
-                    </tr> 
+                </tr> 
 
                 
 
