@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    background-color: rgb(238, 243, 164);
+    color: white;
+  }
+  
+  main {
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid darkgreen;
+    padding: 20px;
+  }
+  
