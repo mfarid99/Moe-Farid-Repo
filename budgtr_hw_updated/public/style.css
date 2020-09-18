@@ -1,0 +1,20 @@
+/* h1 {
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    background-color: darkgreen;
+    color: white;
+  } */
+  
+  main {
+    width: 80%;
+    margin: 40px auto;
+    border: 5px solid darkgreen;
+    padding: 30px;
+  }
+
+  #budget {
+    color: blueviolet;
+    font-size: 3em;
+  }
+
