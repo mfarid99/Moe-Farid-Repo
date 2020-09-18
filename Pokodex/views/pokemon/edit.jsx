@@ -8,6 +8,10 @@ class Edit extends React.Component {
                 <input type="text" name="title" value={pokemon.name}/>
                 <input type="text" name="title" value={pokemon.img}/>
                 <input type="text" name="message" value={pokemon.type}/>
+                <input type="text" name="message" value={pokemon.stats.hp}/>
+                <input type="text" name="message" value={pokemon.stats.attack}/>
+                <input type="text" name="message" value={pokemon.stats.defense}/>
+                <input type="text" name="message" value={pokemon.stats.spattack}/>
                 <input type="submit" value="update"/>
             </form>
         </Layout>)

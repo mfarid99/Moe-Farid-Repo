@@ -9,7 +9,7 @@ class Show extends React.Component {
         <div>  
 
         <h2>{pokemon.name}</h2>
-        <div>{pokemon.img}</div>
+        <div><img src = {pokemon.img}></img></div>
 
         </div>
 

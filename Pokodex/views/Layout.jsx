@@ -1,4 +1,5 @@
 const React = require ("react")
+const Pokemon = require("../models/pokemon")
 
 class Layout extends React.Component {
     render() {
