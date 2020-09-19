@@ -8,7 +8,7 @@ class Show extends React.Component {
         <div> 
         <div>  
 
-        <h2>{pokemon.name}</h2>
+        <h2 id = "pokename">{pokemon.name}</h2>
         <div><img src = {pokemon.img}></img></div>
 
         </div>

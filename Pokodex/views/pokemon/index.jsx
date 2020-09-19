@@ -5,10 +5,10 @@ class Index extends React.Component {
     render(){
         const {Pokemon} = this.props
         return (<Layout title="index">
-            <a href="/pokemon/new"><button>Add A Pokemon</button></a>
-            <div className = "index">
+            <a id = "Addpokemonbtn" href="/pokemon/new"><button>Add A Pokemon</button></a>
+            <div className = "pokeDiv">
             {Pokemon.map((pokemon, index) => {
-                return <a href={`/pokemon/${index}`}><img src = {pokemon.img}></img><h4>{pokemon.name}</h4></a>
+                return <a className = "box" href={`/pokemon/${index}`}><img src = {pokemon.img}></img><h2>{pokemon.name}</h2></a>
                         
                
             })}

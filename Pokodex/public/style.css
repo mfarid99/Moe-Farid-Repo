@@ -11,6 +11,21 @@ h1 {
     margin: 20px auto;
     border: 2px solid darkgreen;
     padding: 20px;
+    background-color: aqua;
+    flex-wrap: nowrap;
   }
+   
+  #Addpokemonbtn {
+    margin-left: 35em;
+  }
+
+  h2 {
+    font-family: fantasy;
+    font-style: normal;
+  }
+
+
+  
+ 
   
   
