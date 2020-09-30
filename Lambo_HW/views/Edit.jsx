@@ -26,6 +26,9 @@ class Edit extends React.Component {
           {"Price: "}
           <input type="text" name="Price" defaultValue={this.props.lambo.Price} />
           <br />
+          {"Stock: "}
+          <input type="text" name="Stock" defaultValue={this.props.lambo.Stock} />
+          <br />
           
           <input type="submit" value="Submit Changes" />
         </form>

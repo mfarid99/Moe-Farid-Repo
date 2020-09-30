@@ -19,6 +19,7 @@ mongoose.connection.once('open', ()=> {
 });
 
 const Lambo = require("./models/lambos.js");
+const { Router } = require('express')
 
 app.set("view engine", "jsx");
 app.engine("jsx", require("express-react-views").createEngine());
@@ -65,8 +66,13 @@ app.put("/lambos/:id", (req, res) => {
     (err, updatedModel) => {
       res.redirect("/lambos");
     }
+    
   );
 });
+
+//BUY
+
+
 
 // CREATE
 app.post("/lambos/", (req, res) => {
@@ -76,7 +82,6 @@ app.post("/lambos/", (req, res) => {
     req.body.readyToBuy = false;
   }
   Lambo.create(req.body, (error, lambo) => {
-    // res.send(fruit);
     res.redirect("/lambos");
   });
 });
@@ -88,7 +93,25 @@ app.get("/lambos/:id/edit", (req, res) => {
   });
 });
 
+//BUY
+app.put("/lambos/:id/buy", async (req, res) => {
+  try{
+  
+    await Lambo.findByIdAndUpdate(req.params.id, {$inc: { Stock:  -1 }}) 
+  res.redirect("back")
+  } catch (error) {
+    res.send(error.message)
+  }
+  });
+
+
 // SHOW
+ app.get("/:index", (req, res) => {
+   res.render("lambos/show.jsx", {
+     lambo: lambos [req.params.index],
+     index: req.params.index,
+   })
+ })
 // Goes here
 
 app.listen(PORT, () => {

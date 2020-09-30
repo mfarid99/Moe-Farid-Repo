@@ -6,6 +6,7 @@ const lamboSchema = new mongoose.Schema ({
     Year: Number,
     Color: String,
     Price: Number,
+    Stock: Number,
 });
 
 const Lambo = mongoose.model('Lambo', lamboSchema);
